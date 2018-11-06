@@ -35,11 +35,8 @@ class Game
                 Console.WriteLine("Spot taken... Try again!");
                 Move(turn);
             }
-            else
-            {
-                board[x - 1] = turn;
-                CheckWin();
-            }
+            board[x - 1] = turn;
+            CheckWin();
         }
         catch
         {
